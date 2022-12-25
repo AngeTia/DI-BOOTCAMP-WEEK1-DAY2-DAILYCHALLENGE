@@ -1,0 +1,88 @@
+
+body {
+    margin: 0;
+    background-image: url("./img/avanger.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1{ 
+    margin-bottom: 50px;
+    font-size: 70px;
+}
+p{
+    font-size: 20px;
+    color: black;
+}
+article {
+    position: relative;
+    top: 200px;
+    margin-left: 50px;
+}
+/* The navigation bar */
+.navbar {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: black;
+    width: 100%; 
+  }
+.navbar li {
+    float: right;
+    list-style-type: none;
+}
+.navbar a {
+    margin-right: 70px;
+    display: block;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 50px;
+  }
+.navbar #logo{
+    width: 100px;
+    height: 100px;
+}
+footer{
+    position: relative;
+    top: 200px;
+    margin-left: 50px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+/* Petits appareils (tablettes en mode portrait et grands téléphones, 600px et plus) */
+@media only screen and (min-width : 600px) {
+    h1 {
+        font-size: 35px;
+    }
+    
+    .navbar{
+        background-color: yellow;
+        color: black;
+    }
+}
+
+/* Périphériques moyens (tablettes en mode paysage, 768px et plus) */
+@media only screen and (min-width : 768px) {
+    h1 {
+        font-size: 25px;
+    }
+    .navbar{
+        background-color: lightgreen ;
+        color: black;
+    }
+}
+
+/* Grands appareils (ordinateurs portables/de bureau, 992px et plus) */
+@media only screen and (min-width : 992px) {
+    .navbar{
+        background-color: red;
+        color: white;
+    }
+}
+
+/* Appareils très grands (ordinateurs portables et de bureau, 1200px et plus) */
+@media only screen and (min-width : 1200px) {
+    .navbar{
+        background-color: black;
+        color: white;
+    }
+}
